@@ -1,5 +1,8 @@
 // Author: Anthony Yalong
 // Description:
+//    Reads a potentiometer, controls LED brightness via PWM, and displays the
+//    brightness percentage on an I2C LCD using non-blocking timing.
+
 
 #include "i2c-lcd_advanced.h"
 
