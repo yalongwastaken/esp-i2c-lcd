@@ -1,22 +1,21 @@
-# ESP32 I2C and OLED
+# ESP32 I2C and LCD Display
 
-A comprehensive collection of ESP32 I2C communication implementations demonstrating bus scanning, device interfacing, and SSD1306 OLED display control with real-time ADC data visualization using both Arduino and ESP-IDF frameworks.
+A comprehensive collection of ESP32 I2C communication implementations demonstrating bus scanning and LCD1602 display interfacing using both Arduino and ESP-IDF frameworks.
 
 ## Project Structure
 ```
-esp32-i2c-oled/
+esp32-i2c-lcd/
 ├── arduino/
-│   ├── i2c-oled_advanved/
-│   └── i2c-oled_basic/
+│   ├── i2c-lcd_advanced/
+│   └── i2c-lcd_basic/
 ├── esp-idf/
-│   ├── i2c-oled_advanved/
-│   └── i2c-oled_basic/
+│   ├── i2c-lcd_advanced/
+│   └── i2c-lcd_basic/
 ├── .gitignore
 └── README.md
 ```
 
 ## Development Environment
-
 **Primary Development:** PlatformIO
 
 **Compatibility:**
@@ -26,21 +25,18 @@ esp32-i2c-oled/
 **Hardware Tested:** ESP32-WROOM-32E module
 
 ## Hardware Requirements
-
 - ESP32-WROOM-32E development board
-- SSD1306 OLED display (128×64, I2C)
-- Photoresistor or potentiometer (for ADC input)
+- I2C LCD1602 
 - Pull-up resistors (2.2kΩ - 4.7kΩ) for I2C bus (if not on module)
 - Breadboard and jumper wires
+- Optional: Photoresistor or potentiometer (for ADC input in advanced examples)
 
 ## Key Features
-
-- **I2C Protocol Implementation:** Master mode communication with device scanning
-- **OLED Display Control:** SSD1306 interfacing with graphics and text rendering
+- **I2C Protocol Implementation:** Master mode communication with non-blocking device scanning
+- **LCD Display Control:** LCD1602 interfacing with text rendering and custom characters
 - **Multi-Framework Support:** Identical functionality in Arduino and ESP-IDF
-- **Real-Time Visualization:** ADC sensor data displayed with numerical and graphical representations
-- **Signal Processing:** Moving average filtering for noise reduction
+- **State Machine Architecture:** Non-blocking operation for responsive system behavior
+- **Device Detection:** Automated I2C address scanning (typical LCD addresses: 0x27 or 0x3F)
 
 ## Author
-
 Anthony Yalong

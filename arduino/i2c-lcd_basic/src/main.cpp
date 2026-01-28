@@ -1,10 +1,10 @@
 // Author: Anthony Yalong
 // Description: Non-blocking I2C scanner
 
-#include "i2c-oled_basic_arduino.h"
+#include "i2c-lcd_basic_arduino.h"
 
 // logging
-const char *TAG = "i2c-oled_basic (arduino)";
+const char *TAG = "i2c-lcd_basic (arduino)";
 
 // state machine for non-blocking operation
 enum scan_state_t {

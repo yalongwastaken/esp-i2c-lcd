@@ -1,8 +1,8 @@
 // Author: Anthony Yalong
 // Description: Header file for `main.c`
 
-#ifndef I2C_OLED_BASIC_ARDUINO_H
-#define I2C_OLED_BASIC_ARDUINO_H
+#ifndef I2C_LCD_ADVANCED_ARDUINO_H
+#define I2C_LCD_ADVANCED_ARDUINO_H
 
 // imports
 #include <Wire.h>
@@ -11,8 +11,7 @@
 
 // file configuration
 #define BAUDRATE 115200
-#define CLOCK_SPEED_DEFAULT 100000
-#define SCAN_DELAY 5000
+
 
 // i2c configuration
 #define I2C_SDA_PIN GPIO_NUM_21
@@ -21,4 +20,4 @@
 #define I2C_END_ADDR 0x77
 
 
-#endif  // I2C_OLED_BASIC_ARDUINO_H
+#endif  // I2C_LCD_ADVANCED_ARDUINO_H
