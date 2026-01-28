@@ -6,13 +6,11 @@ A comprehensive collection of ESP32 I2C communication implementations demonstrat
 ```
 esp32-i2c-oled/
 ├── arduino/
-│   ├── i2c_scanner/
-│   └── adc_oled_display/
+│   ├── i2c-oled_advanved/
+│   └── i2c-oled_basic/
 ├── esp-idf/
-│   ├── i2c_scanner/
-│   └── adc_oled_display/
-├── docs/
-│   └── day6_complete_module.md
+│   ├── i2c-oled_advanved/
+│   └── i2c-oled_basic/
 ├── .gitignore
 └── README.md
 ```
